@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.search-history-bg-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.input-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10vh;
+  padding: 13px;
+  width: 100%;
+  background-color: #3367d6;
+}
+
+.input-card-image {
+  height: 30px;
+  width: 100px;
+}
+
+.input-box-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 20px;
+  background-color: #2850a7;
+  border-radius: 5px;
+  border-width: 0px;
+  border-style: solid;
+  height: 40px;
+}
+
+.search-icon-container {
+  background-color: transparent;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ececec;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  background-color: transparent;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ececec;
+  padding: 7px;
+  color: #ffffff;
+  outline: none;
+  width: 100%;
+}
+
+.history-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.history-list {
+  list-style-type: none;
+  padding: 10px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  border-radius: 10px;
+}
+
+.history-item {
+  width: 100%;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.history-item-time {
+  color: #475569;
+  font-size: 15px;
+}
+
+.history-item-logo {
+  height: 30px;
+  width: 30px;
+}
+
+.history-item-text-card {
+  margin-left: 20px;
+  padding: 0px;
+  width: 80%;
+}
+
+.history-item-text-card-heading {
+  color: #475569;
+  font-size: 15px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.history-item-text-card-description {
+  font-size: 15px;
+  color: #64748b;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.history-content-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.history-item-button {
+  background-color: #ffffff;
+  align-self: flex-end;
+  border-width: 0px;
+  border-style: solid;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 22px;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.error-message-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.error-message {
+  font-size: 30px;
+  color: #475569;
+}
+
+@media screen and (min-width: 768px) {
+  .input-card {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .input-card-image {
+    height: 40px;
+    width: 120px;
+  }
+  .input-box-container {
+    height: 50px;
+    width: 40%;
+    align-self: center;
+    margin-left: 450px;
+  }
+  .search-icon-container {
+    width: 13%;
+  }
+  .history-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+  }
+  .history-list {
+    width: 80%;
+  }
+  .history-content-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    justify-content: space-between;
+  }
+  .history-item-time {
+    font-size: 18px;
+    width: 100px;
+    margin-right: 20px;
+  }
+  .history-item-logo {
+    height: 35px;
+    width: 35px;
+  }
+  .history-item-text-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .history-item-text-card-heading {
+    font-size: 18px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-right: 20px;
+  }
+  .history-item-text-card-description {
+    font-size: 16px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .history-item-button {
+    text-align: right;
+    padding-right: 0px;
+  }
+}
